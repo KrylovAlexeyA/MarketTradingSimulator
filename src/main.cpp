@@ -8,9 +8,9 @@
 int main() {
     // Загружаем данные
     std::vector<Trade> trades = loadTrades("/Users/krylovalexey/CLionProjects/MarketTradingSimulator/data/trades_1000pepeusdt.csv");
-    std::cout << trades.size() << "trades data extracted" << std::endl;
+    std::cout << trades.size() << " trades data extracted" << std::endl;
     std::vector<BBO> bboData = loadBBO( "/Users/krylovalexey/CLionProjects/MarketTradingSimulator/data/bbo_1000pepeusdt.csv");
-    std::cout << bboData.size() << "bbo data extracted" << std::endl;
+    std::cout << bboData.size() << " bbo data extracted" << std::endl;
 
     // Временное окно в миллисекундах (например, 1 секунда = 1000 миллисекунд)
     std::chrono::milliseconds windowSize(1000);

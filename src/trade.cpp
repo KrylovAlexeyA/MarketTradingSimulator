@@ -5,7 +5,7 @@
 #include <vector>
 
 // Функция для загрузки трейдов из CSV
-std::vector<Trade> loadTrades(const std::string& filename) {
+std::vector<Trade> loadTrades(const std::string &filename) {
     std::vector<Trade> trades;
     std::ifstream file(filename);
     std::string line;
