@@ -10,4 +10,8 @@ add_executable(MarketTradingSimulator src/main.cpp
         src/bbo.cpp
         src/candle.h
         src/candle.cpp
+        src/strategy.h
+        src/strategy.cpp
+        src/simulator.h
+        src/simulator.cpp
 )
