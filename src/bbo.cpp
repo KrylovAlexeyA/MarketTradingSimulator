@@ -1,9 +1,10 @@
 #include "bbo.h"
 #include <fstream>
+#include <iostream>
 #include <sstream>
 
 // Функция для загрузки данных BBO из CSV
-std::vector<BBO> loadBBO(const std::string& filename) {
+std::vector<BBO> loadBBO(const std::string &filename) {
     std::vector<BBO> bboData;
     std::ifstream file(filename);
     std::string line;
@@ -29,6 +30,6 @@ std::vector<BBO> loadBBO(const std::string& filename) {
 
             bboData.push_back(bbo);
         }
+        return bboData;
     }
-    return bboData;
 }
